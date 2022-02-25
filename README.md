@@ -1,4 +1,4 @@
-# Makerspace-Project
+# Makerspace Network Project
 ## Objectives
 The project's objective is to build the largest network of  makerspaces and workshops inside VinUniversity. A network founded on genuine collaboration and shared values. These principles are based on the notion of equal access to tools and technology for all students, faculty, and external partners.
 
