@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules",
+  "info": {
+    "name": "Modules",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "displayImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "machines": {
+      "via": "modules",
+      "collection": "machines"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "users_completed_online": {
+      "via": "online_module_modules",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "entry",
+        "intermediate",
+        "advanced"
+      ]
+    },
+    "session": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table.offline-session"
+    },
+    "users_approved": {
+      "via": "modules_completed",
+      "plugin": "users-permissions",
+      "collection": "user",
+      "dominant": true
+    },
+    "bookingUrl": {
+      "type": "string"
+    },
+    "teaching_content": {
+      "type": "richtext"
+    },
+    "comprehension_test": {
+      "type": "component",
+      "repeatable": false,
+      "component": "module.quiz"
+    }
+  }
+}

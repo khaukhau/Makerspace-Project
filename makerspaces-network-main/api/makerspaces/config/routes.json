@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/makerspaces",
+      "handler": "makerspaces.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/makerspaces/count",
+      "handler": "makerspaces.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/makerspaces/:id",
+      "handler": "makerspaces.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/makerspaces",
+      "handler": "makerspaces.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/makerspaces/:id",
+      "handler": "makerspaces.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/makerspaces/:id",
+      "handler": "makerspaces.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_table_offline_sessions",
+  "info": {
+    "name": "Offline-session",
+    "icon": "hands-helping",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "canceled",
+        "full"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "instructor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "instructor.instructor"
+    },
+    "maxseats": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    }
+  }
+}

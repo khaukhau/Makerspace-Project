@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_module_videos",
+  "info": {
+    "name": "video",
+    "icon": "file-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "youtubeUrl": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

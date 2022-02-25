@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "machines",
+  "info": {
+    "name": "Machines",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "displayImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "descriptions": {
+      "type": "text"
+    },
+    "modules": {
+      "via": "machines",
+      "collection": "modules",
+      "dominant": true
+    },
+    "suitable_materials": {
+      "via": "machines",
+      "collection": "suitable-materials",
+      "dominant": true
+    },
+    "processes": {
+      "via": "machines",
+      "collection": "process",
+      "dominant": true
+    },
+    "manuals": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": true,
+      "component": "table.machine-location"
+    }
+  }
+}

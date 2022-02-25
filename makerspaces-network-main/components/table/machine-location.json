@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_table_machine_locations",
+  "info": {
+    "name": "machine-location",
+    "icon": "print",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "maintaining",
+        "unavailable"
+      ]
+    },
+    "num": {
+      "type": "integer"
+    },
+    "location": {
+      "type": "string"
+    },
+    "makerspace": {
+      "type": "string"
+    }
+  }
+}

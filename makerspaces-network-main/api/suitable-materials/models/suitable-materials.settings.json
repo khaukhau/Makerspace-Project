@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suitable_materials",
+  "info": {
+    "name": "Suitable Materials",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "machines": {
+      "via": "suitable_materials",
+      "collection": "machines"
+    }
+  }
+}

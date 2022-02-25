@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_module_reviews",
+  "info": {
+    "name": "page",
+    "icon": "file-invoice",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
